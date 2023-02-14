@@ -33,28 +33,28 @@ def remove_low_number(dribbling_input, element):
 #   print(f"Your player's final dribbling stat: {final_dribbling} ")
 
   
-# def dribbling_stats(dribbling_input, sum, final_dribbling, remove_low_number):
-#   print(dribbling_input)
-#   print("List of stats: ", dribbling_input)
-#   while remove_low_number == True:
-#     dribbling_stats()
-#   if remove_low_number == False:
-#     print(sum)
-#     print(final_dribbling)
-#     print(f"Your player's final dribbling stat: {final_dribbling} ")
-#     return dribbling_input
-    ### Didn't repeat the function
-
 def dribbling_stats(dribbling_input, sum, final_dribbling, remove_low_number):
   print(dribbling_input)
   print("List of stats: ", dribbling_input)
+  while remove_low_number == True:
+    dribbling_stats()
   if remove_low_number == False:
     print(sum)
     print(final_dribbling)
     print(f"Your player's final dribbling stat: {final_dribbling} ")
     return dribbling_input
-  else:
-      return dribbling_stats(dribbling_input, sum, final_dribbling, remove_low_number)
+    ## Didn't repeat the function
+
+# def dribbling_stats(dribbling_input, sum, final_dribbling, remove_low_number):
+#   print(dribbling_input)
+#   print("List of stats: ", dribbling_input)
+#   if remove_low_number == False:
+#     print(sum)
+#     print(final_dribbling)
+#     print(f"Your player's final dribbling stat: {final_dribbling} ")
+#     return dribbling_input
+#   else:
+#       return dribbling_stats(dribbling_input, sum, final_dribbling, remove_low_number)
 
     # def repeat_input():
     # while True:
